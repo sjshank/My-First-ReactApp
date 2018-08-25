@@ -1,0 +1,251 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.contact-list-section{
+  margin: 20px 100px;
+}
+.each-contact-row{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  background-color: #eee;
+  border-radius: 4px;
+}
+.each-contact-row img{
+    width: 35px;
+    height: 35px;
+    float: right;  
+}
+.each-contact:hover{
+  cursor: pointer;
+}
+.each-contact{
+  float: left;
+  padding-top: 7px;
+}
+.contact-name{
+  font-size: 1em;
+  text-decoration: none;
+  color: #252525;
+  font-weight: bold;
+}
+.each-expand-collapse{
+  float: right;
+}
+.search-input{
+  margin: 10px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.search-input input{
+  padding: 8px;
+  border: 1px solid #c7c7ca;
+  width: 100%;
+  border-radius: 4px;
+}
+.clear-both{
+  clear: both;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-light {
+    color: #212529;
+    background-color: #f8f9fa;
+    border: 1px solid #c7c7ca;
+}
+.btn-light:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    cursor: pointer;
+}
+ul{
+  text-align: left;
+  padding-left: 0px;
+}
+ul li{
+  padding: 4px;
+}
+ul li span:first-child{
+  padding-right: 15px;
+}
+.avatar-div{
+  padding-top: 20px;
+  padding-right: 10px;
+}
+.avatar-div img{
+  width: 90px;
+  height: 90px;
+}
+.add-contact-btn{
+  float:right;
+  margin-left: 10px;
+}
+.add-contact-section{
+  text-align: left;
+  margin: 12px;
+  padding: 10px;
+  border: 1px solid #c7c7ca;
+  border-radius: 4px; 
+}
+.add-contact-section form{
+  margin-bottom: 10px;
+}
+.add-contact-section form input{
+    width: 80%;
+    min-height: 25px;  
+    border: 1px solid #c7c7ca;
+    padding: 4px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+ul.form-ul{
+  display: flex;
+}
+ul.form-ul li{
+  width: 100%;
+}
+.add-contact-section .btn-submit{
+  width: 80px;
+  margin-left: 4px;  
+}
+span.search-summary-span{
+  float: left;
+  margin-top: 10px;
+  color: #39c229;
+}
+div.empty-records{
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  color: #252525;
+  border: 1px solid #c7c7ca;
+  border-radius: 4px;
+}
+div.edit-contact-section{
+  padding-left: 20px;
+  padding-top: 10px;
+}
+div.edit-contact-section:hover{
+  cursor: pointer;
+}
+div.contact-details-section{
+  min-width: 300px;
+}
+div.contact-details-section input{
+  width: 50%;
+  min-height: 25px;
+  border: 1px solid #c7c7ca;
+  padding: 4px;  
+}
+div.expand-collapse-all{
+  float: right;
+  display: flex;
+}
+div.expand-collapse-all img{
+  width: 35px;
+  height: 35px;
+}
+
+/* toast css */
+#snackbar {
+    display: none;
+    min-width: 500px;
+    margin-left: -230px;
+    background-color: #04844b;
+    color: #fff!important;
+    text-align: left;
+    border-radius: 0;
+    font-size: 12px;
+    padding: 20px;
+    position: fixed;
+    z-index: 4;
+    left: 50%;
+    top: 40px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+#snackbar #headerTitle {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: inherit;
+}
+#snackbar #subTitle {
+    font-size: 14px;
+    padding-top: 6px;
+    font-family: inherit;
+}
+#snackbar.show {
+    display: block;
+    -webkit-animation: fadein 0.5s, fadeout 1s 3.5s;
+    animation: fadein 0.5s, fadeout 1s 3.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 40px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 40px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 40px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 40px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+/* ends here */
